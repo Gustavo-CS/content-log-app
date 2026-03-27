@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  body {
+    background-color: #eaeefe; /* subtle paper-like background */
+    color: #1a1a1a;
+  }
+}
+
+.notebook-paper {
+  background-color: #fafafa;
+  background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+  background-size: 28px 28px; /* Dotted grid */
+  border: 2px solid #1e3a8a; /* deep blue ink color */
+  border-radius: 4px;
+}
+
+.handwritten-border {
+  border: 2px solid #1e3a8a;
+  border-radius: 2px 255px 3px 25px / 255px 5px 225px 3px;
+}
+
+.ink-text {
+  color: #1e3a8a; /* Blue pen ink color representing handwritten values */
+}
